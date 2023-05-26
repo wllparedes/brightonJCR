@@ -1,0 +1,190 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Lobster&family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+
+:root {
+    --fuente-titulo: 'Lobster', cursive;
+    --fuente-parrafo: 'Arvo', serif;
+    --blanco: #f8f8f8;
+    --oscuro: #1a1a1a;
+    --jade: #0a4941;
+}
+
+
+
+
+.espaciado {
+    padding: 60px 0 60px 0;
+}
+
+.contenedor {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección Header 01*/
+
+#cabecera {
+    background-image: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    height: 300px;
+}
+
+#cabecera .contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+#cabecera h1 {
+    font-family: var(--fuente-titulo);
+    color: var(--oscuro);
+    font-size: 70px;
+}
+
+#cabecera p,
+.boton {
+    font-size: 16px;
+    font-family: var(--fuente-parrafo);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.interlineado {
+    line-height: 1.6;
+}
+
+.boton {
+    width: 100px;
+    padding: 8px;
+    background-color: #0088c2;
+    font-weight: bold;
+}
+
+
+
+/* Seccion 02 */
+
+
+.ajustar_ancho {
+    width: 100%;
+    height: auto;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+#jugadores .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#jugadores .contenedor h2,
+p,
+i,
+h3 {
+    font-family: var(--fuente-parrafo);
+}
+
+
+
+
+#jugadores .contenedor .fila {
+    gap: 10px;
+}
+
+.columna {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#jugadores .contenedor .columna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.redes-sociales i {
+    border: 1px solid #d4d4d4;
+    padding: 8px;
+}
+
+#jugadores .contenedor .columna {
+    border: 1px solid #e0e0e0;
+}
+
+#jugadores .contenedor .columna .sub-subtitulo {
+    color: #3a88bf;
+}
+
+.columna img {
+    background-color: rgb(244, 244, 244);
+}
+
+/* Seccion 03 */
+
+#informacion {
+    background-image: url("img/aficion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#informacion .img-brighton {
+    width: 50%;
+    margin: 0 25%;
+    box-shadow: 9px 9px 18px 6px rgba(83, 82, 82, 0.58);
+    -webkit-box-shadow: 9px 9px 18px 6px rgba(83, 82, 82, 0.58);
+    -moz-box-shadow: 9px 9px 18px 6px rgba(83, 82, 82, 0.58);
+}
+
+#informacion .columna-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.columna-info .titulo-uno {
+    font-family: var(--fuente-parrafo);
+    display: inline-block;
+}
+
+.columna-info .titulo-dos {
+    font-family: var(--fuente-titulo);
+    display: inline-block;
+}
+
+#informacion .boton {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+}
